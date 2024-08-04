@@ -15,7 +15,6 @@ RUN apt-get update \
 
 RUN locale-gen en_US.UTF-8 \
     && rm -f /usr/lib/python3.12/EXTERNALLY-MANAGED \
-    && pip3 install --upgrade pip \
     && pip3 install ansible cryptography
 
 RUN mkdir -p /etc/ansible \
