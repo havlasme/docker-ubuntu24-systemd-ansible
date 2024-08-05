@@ -20,6 +20,8 @@ platforms:
   image: docker.io/havlasme/ubuntu24-systemd-ansible:latest
   pre_build_image: true
   command: '/lib/systemd/systemd'
+  volumes:
+  - /sys/fs/cgroup:/sys/fs/cgroup:ro
 ```
 
 How to Build
