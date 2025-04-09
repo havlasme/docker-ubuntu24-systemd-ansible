@@ -11,8 +11,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/doc /usr/share/man \
-    # Remove unnecessary getty and udev services that can result in high CPU
-    # usage when using multiple containers with Molecule (https://github.com/ansible/molecule/issues/1104)
+    # Remove unnecessary getty and udev services that can cause high CPU usage
+    # when using multiple containers with Molecule (https://github.com/ansible/molecule/issues/1104)
     && rm -f /lib/systemd/system/systemd*udev* \
     && rm -f /lib/systemd/system/getty.target
 
