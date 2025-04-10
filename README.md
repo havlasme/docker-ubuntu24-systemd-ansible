@@ -1,18 +1,18 @@
-Ubuntu 24.04 "Noble Numbat" Ansible Molecule Test Image
-================================================
+Ubuntu 24.04 "Noble Numbat" Ansible Molecule Testing Image
+==========================================================
 
 [![CI][gitlabci-image]][gitlabci-link]
 [![Apache-2.0 license][dockerhub-image]][dockerhub-link]
 [![Apache-2.0 license][license-image]][license-link]
 
-Ubuntu 24.04 "Noble Numbat" based image intended for [Ansible](https://www.ansible.com/) role testing using [Molecule](https://ansible.readthedocs.io/projects/molecule/).
+[Ubuntu 24.04 "Noble Numbat"](https://hub.docker.com/_/ubuntu) based image intended for testing [Ansible](https://www.ansible.com/) roles using [Molecule](https://ansible.readthedocs.io/projects/molecule/).
 
-This image is built automatically on each commit to the `main` branch, and published on the [Docker Hub](https://hub.docker.com/) as [`havlasme/ubuntu24-systemd-ansible:latest`](https://hub.docker.com/r/havlasme/ubuntu24-systemd-ansible).
+This image is built automatically on each commit to the `main` branch and published on the [Docker Hub](https://hub.docker.com/) as [`havlasme/ubuntu24-systemd-ansible:latest`](https://hub.docker.com/r/havlasme/ubuntu24-systemd-ansible).
 
 How to Use
 ----------
 
-To use this image in Molecule scenario, update the `platforms` section in the `molecule.yml`.
+To use this image in a Molecule scenario, update the `platforms` section in the `molecule.yml`.
 
 ```yaml title="molecule.yml"
 platforms:
@@ -27,7 +27,7 @@ platforms:
 How to Build
 ------------
 
-To build the image locally simply run:
+To build the image locally, simply run:
 
 ```shell
 make build
